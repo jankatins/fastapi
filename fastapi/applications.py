@@ -6,6 +6,7 @@ from typing import (
     Coroutine,
     Dict,
     List,
+    Mapping,
     Optional,
     Sequence,
     Type,
@@ -680,7 +681,7 @@ class FastAPI(Starlette):
             ),
         ] = True,
         responses: Annotated[
-            Optional[Dict[Union[int, str], Dict[str, Any]]],
+            Optional[Mapping[Union[int, str], Mapping[str, Any]]],
             Doc(
                 """
                 Additional responses to be shown in OpenAPI.
@@ -1300,7 +1301,7 @@ class FastAPI(Starlette):
             ),
         ] = None,
         responses: Annotated[
-            Optional[Dict[Union[int, str], Dict[str, Any]]],
+            Optional[Mapping[Union[int, str], Mapping[str, Any]]],
             Doc(
                 """
                 Additional responses to be shown in OpenAPI.
@@ -1584,7 +1585,7 @@ class FastAPI(Starlette):
             ),
         ] = "Successful Response",
         responses: Annotated[
-            Optional[Dict[Union[int, str], Dict[str, Any]]],
+            Optional[Mapping[Union[int, str], Mapping[str, Any]]],
             Doc(
                 """
                 Additional responses that could be returned by this *path operation*.
@@ -1957,7 +1958,7 @@ class FastAPI(Starlette):
             ),
         ] = "Successful Response",
         responses: Annotated[
-            Optional[Dict[Union[int, str], Dict[str, Any]]],
+            Optional[Mapping[Union[int, str], Mapping[str, Any]]],
             Doc(
                 """
                 Additional responses that could be returned by this *path operation*.
@@ -2335,7 +2336,7 @@ class FastAPI(Starlette):
             ),
         ] = "Successful Response",
         responses: Annotated[
-            Optional[Dict[Union[int, str], Dict[str, Any]]],
+            Optional[Mapping[Union[int, str], Mapping[str, Any]]],
             Doc(
                 """
                 Additional responses that could be returned by this *path operation*.
@@ -2713,7 +2714,7 @@ class FastAPI(Starlette):
             ),
         ] = "Successful Response",
         responses: Annotated[
-            Optional[Dict[Union[int, str], Dict[str, Any]]],
+            Optional[Mapping[Union[int, str], Mapping[str, Any]]],
             Doc(
                 """
                 Additional responses that could be returned by this *path operation*.
@@ -3086,7 +3087,7 @@ class FastAPI(Starlette):
             ),
         ] = "Successful Response",
         responses: Annotated[
-            Optional[Dict[Union[int, str], Dict[str, Any]]],
+            Optional[Mapping[Union[int, str], Mapping[str, Any]]],
             Doc(
                 """
                 Additional responses that could be returned by this *path operation*.
@@ -3459,7 +3460,7 @@ class FastAPI(Starlette):
             ),
         ] = "Successful Response",
         responses: Annotated[
-            Optional[Dict[Union[int, str], Dict[str, Any]]],
+            Optional[Mapping[Union[int, str], Mapping[str, Any]]],
             Doc(
                 """
                 Additional responses that could be returned by this *path operation*.
@@ -3832,7 +3833,7 @@ class FastAPI(Starlette):
             ),
         ] = "Successful Response",
         responses: Annotated[
-            Optional[Dict[Union[int, str], Dict[str, Any]]],
+            Optional[Mapping[Union[int, str], Mapping[str, Any]]],
             Doc(
                 """
                 Additional responses that could be returned by this *path operation*.
@@ -4210,7 +4211,7 @@ class FastAPI(Starlette):
             ),
         ] = "Successful Response",
         responses: Annotated[
-            Optional[Dict[Union[int, str], Dict[str, Any]]],
+            Optional[Mapping[Union[int, str], Mapping[str, Any]]],
             Doc(
                 """
                 Additional responses that could be returned by this *path operation*.

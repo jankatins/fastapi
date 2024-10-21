@@ -438,7 +438,7 @@ class APIRoute(routing.Route):
         summary: Optional[str] = None,
         description: Optional[str] = None,
         response_description: str = "Successful Response",
-        responses: Optional[Dict[Union[int, str], Dict[str, Any]]] = None,
+        responses: Optional[Mapping[Union[int, str], Mapping[str, Any]]] = None,
         deprecated: Optional[bool] = None,
         name: Optional[str] = None,
         methods: Optional[Union[Set[str], List[str]]] = None,
@@ -661,7 +661,7 @@ class APIRouter(routing.Router):
             ),
         ] = Default(JSONResponse),
         responses: Annotated[
-            Optional[Dict[Union[int, str], Dict[str, Any]]],
+            Optional[Mapping[Union[int, str], Mapping[str, Any]]],
             Doc(
                 """
                 Additional responses to be shown in OpenAPI.
@@ -890,7 +890,7 @@ class APIRouter(routing.Router):
         summary: Optional[str] = None,
         description: Optional[str] = None,
         response_description: str = "Successful Response",
-        responses: Optional[Dict[Union[int, str], Dict[str, Any]]] = None,
+        responses: Optional[Mapping[Union[int, str], Mapping[str, Any]]] = None,
         deprecated: Optional[bool] = None,
         methods: Optional[Union[Set[str], List[str]]] = None,
         operation_id: Optional[str] = None,
@@ -971,7 +971,7 @@ class APIRouter(routing.Router):
         summary: Optional[str] = None,
         description: Optional[str] = None,
         response_description: str = "Successful Response",
-        responses: Optional[Dict[Union[int, str], Dict[str, Any]]] = None,
+        responses: Optional[Mapping[Union[int, str], Mapping[str, Any]]] = None,
         deprecated: Optional[bool] = None,
         methods: Optional[List[str]] = None,
         operation_id: Optional[str] = None,
@@ -1162,7 +1162,7 @@ class APIRouter(routing.Router):
             ),
         ] = Default(JSONResponse),
         responses: Annotated[
-            Optional[Dict[Union[int, str], Dict[str, Any]]],
+            Optional[Mapping[Union[int, str], Mapping[str, Any]]],
             Doc(
                 """
                 Additional responses to be shown in OpenAPI.
@@ -1490,7 +1490,7 @@ class APIRouter(routing.Router):
             ),
         ] = "Successful Response",
         responses: Annotated[
-            Optional[Dict[Union[int, str], Dict[str, Any]]],
+            Optional[Mapping[Union[int, str], Mapping[str, Any]]],
             Doc(
                 """
                 Additional responses that could be returned by this *path operation*.
@@ -1867,7 +1867,7 @@ class APIRouter(routing.Router):
             ),
         ] = "Successful Response",
         responses: Annotated[
-            Optional[Dict[Union[int, str], Dict[str, Any]]],
+            Optional[Mapping[Union[int, str], Mapping[str, Any]]],
             Doc(
                 """
                 Additional responses that could be returned by this *path operation*.
@@ -2249,7 +2249,7 @@ class APIRouter(routing.Router):
             ),
         ] = "Successful Response",
         responses: Annotated[
-            Optional[Dict[Union[int, str], Dict[str, Any]]],
+            Optional[Mapping[Union[int, str], Mapping[str, Any]]],
             Doc(
                 """
                 Additional responses that could be returned by this *path operation*.
@@ -2631,7 +2631,7 @@ class APIRouter(routing.Router):
             ),
         ] = "Successful Response",
         responses: Annotated[
-            Optional[Dict[Union[int, str], Dict[str, Any]]],
+            Optional[Mapping[Union[int, str], Mapping[str, Any]]],
             Doc(
                 """
                 Additional responses that could be returned by this *path operation*.
@@ -3008,7 +3008,7 @@ class APIRouter(routing.Router):
             ),
         ] = "Successful Response",
         responses: Annotated[
-            Optional[Dict[Union[int, str], Dict[str, Any]]],
+            Optional[Mapping[Union[int, str], Mapping[str, Any]]],
             Doc(
                 """
                 Additional responses that could be returned by this *path operation*.
@@ -3385,7 +3385,7 @@ class APIRouter(routing.Router):
             ),
         ] = "Successful Response",
         responses: Annotated[
-            Optional[Dict[Union[int, str], Dict[str, Any]]],
+            Optional[Mapping[Union[int, str], Mapping[str, Any]]],
             Doc(
                 """
                 Additional responses that could be returned by this *path operation*.
@@ -3767,7 +3767,7 @@ class APIRouter(routing.Router):
             ),
         ] = "Successful Response",
         responses: Annotated[
-            Optional[Dict[Union[int, str], Dict[str, Any]]],
+            Optional[Mapping[Union[int, str], Mapping[str, Any]]],
             Doc(
                 """
                 Additional responses that could be returned by this *path operation*.
@@ -4149,7 +4149,7 @@ class APIRouter(routing.Router):
             ),
         ] = "Successful Response",
         responses: Annotated[
-            Optional[Dict[Union[int, str], Dict[str, Any]]],
+            Optional[Mapping[Union[int, str], Mapping[str, Any]]],
             Doc(
                 """
                 Additional responses that could be returned by this *path operation*.
